@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>361</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>calculator</string>
+  </property>
+  <property name="windowOpacity">
+   <double>0.960000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(53, 50, 49);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="OutputLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>341</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PercentButtom">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>110</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cButtom">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>110</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="arrowButtom">
+    <property name="geometry">
+     <rect>
+      <x>182</x>
+      <y>110</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="drvideButtom">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>110</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="eightButtom">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>190</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="multiplyButtom">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>190</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sevenButtom">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>190</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nineButtom">
+    <property name="geometry">
+     <rect>
+      <x>182</x>
+      <y>190</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="oneButtom">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>350</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fiveButtom">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>270</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minusButtom">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>270</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fourButtom">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>270</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sixButtom">
+    <property name="geometry">
+     <rect>
+      <x>182</x>
+      <y>270</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="twoButtom">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>350</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="threeButtom">
+    <property name="geometry">
+     <rect>
+      <x>182</x>
+      <y>350</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addButtom">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>350</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ecualButtom">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>430</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="decimalButtom">
+    <property name="geometry">
+     <rect>
+      <x>182</x>
+      <y>430</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="plusMinusButtom">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>430</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(30, 39, 46);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+background-color: rgb(47, 54, 64);
+}</string>
+    </property>
+    <property name="text">
+     <string>+/-</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zeroButtom">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>430</y>
+      <width>86</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 247, 247);
+background-color: rgb(99, 110, 114);
+border-radius: 3px;
+}
+
+QPushButton:hover{
+	background-color: rgb(128, 142, 155);
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>361</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
